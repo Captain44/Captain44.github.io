@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bronm\\Documents\\web\\BlazorApp\\BlazorApp.csproj": {}
+    "C:\\Users\\bronm\\Documents\\Web\\Captain44.github.io\\BlazorApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bronm\\Documents\\web\\BlazorApp\\BlazorApp.csproj": {
+    "C:\\Users\\bronm\\Documents\\Web\\Captain44.github.io\\BlazorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bronm\\Documents\\web\\BlazorApp\\BlazorApp.csproj",
+        "projectUniqueName": "C:\\Users\\bronm\\Documents\\Web\\Captain44.github.io\\BlazorApp.csproj",
         "projectName": "BlazorApp",
-        "projectPath": "C:\\Users\\bronm\\Documents\\web\\BlazorApp\\BlazorApp.csproj",
+        "projectPath": "C:\\Users\\bronm\\Documents\\Web\\Captain44.github.io\\BlazorApp.csproj",
         "packagesPath": "C:\\Users\\bronm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bronm\\Documents\\web\\BlazorApp\\obj\\",
+        "outputPath": "C:\\Users\\bronm\\Documents\\Web\\Captain44.github.io\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bronm\\AppData\\Roaming\\NuGet\\NuGet.Config",
