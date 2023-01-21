@@ -1,4 +1,4 @@
-import {agGrid} from 'https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.noStyle.js';
+import {Grid} from 'https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.noStyle.js';
 
 // Function to demonstrate calling grid's API
 function deselect(){
@@ -32,7 +32,7 @@ const gridOptions = {
 // get div to host the grid
 const eGridDiv = document.getElementById("myGrid");
 // new grid instance, passing in the hosting DIV and Grid Options
-new agGrid.Grid(eGridDiv, gridOptions);
+new Grid(eGridDiv, gridOptions);
 
 // Fetch data from server
 fetch("https://www.ag-grid.com/example-assets/row-data.json")
