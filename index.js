@@ -3,7 +3,7 @@ import {Grid} from 'https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-
 // Function to demonstrate calling grid's API
 function deselect(){
     var  b = document.getElementById('deselectButton');
-    b.setAttribute('background-color','blue')
+    b.addEventListener('click',b.setAttribute('background-color','blue') )
     gridOptions.api.deselectAll()
 }
 
