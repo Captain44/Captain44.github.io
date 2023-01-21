@@ -1,6 +1,4 @@
 import {agGrid} from 'https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.noStyle.js';
-import 'https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-grid.css';
-import 'https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-theme-alpine.css';
 
 // Function to demonstrate calling grid's API
 function deselect(){
