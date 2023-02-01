@@ -10,6 +10,35 @@ var clickfun = function () {
 
 b.addEventListener("click", clickfun)
 
-export var a = function() {
-    print("Hi")
+var getData = async function () {
+    const data = await fetch("https://api3.binance.com/api/v3/ticker/price")
+                .then(resp => resp.json())
+    console.log(data)
+    return(data)            
 }
+
+var setupGrid = async function () {
+    const columnDefs = [
+        { field: "symbol" },
+        { field: "price" }
+      ];
+
+      
+      const gridOptions = {
+        columnDefs: columnDefs,
+        rowData: []
+      };
+
+    // setup the grid after the page has finished loading
+    document.addEventListener('DOMContentLoaded', () => {
+    const gridDiv = document.querySelector('#myGrid');
+    new agGrid.Grid(gridDiv, gridOptions);
+    });
+    
+    const rowData = getData()
+            .then(data => gridOptions.api.setRowData(data))
+
+
+}
+
+await setupGrid()

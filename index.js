@@ -1,43 +1,24 @@
-import {Grid} from 'https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.noStyle.js';
+const columnDefs = [
+  { field: "make" },
+  { field: "model" },
+  { field: "price" }
+];
 
-// Function to demonstrate calling grid's API
-function deselect(){
-    var  b = document.getElementById('deselectButton');
-    b.addEventListener('click',b.setAttribute('background-color','blue') )
-    gridOptions.api.deselectAll()
-}
+// specify the data
+const rowData = [
+  { make: "Toyota", model: "Celica", price: 35000 },
+  { make: "Ford", model: "Mondeo", price: 32000 },
+  { make: "Porsche", model: "Boxster", price: 72000 }
+];
 
-// Grid Options are properties passed to the grid
+// let the grid know which columns and what data to use
 const gridOptions = {
-
-  // each entry here represents one column
-  columnDefs: [
-    { field: "make" },
-    { field: "model" },
-    { field: "price" },
-  ],
-
-  // default col def properties get applied to all columns
-  defaultColDef: {sortable: true, filter: true},
-
-  rowSelection: 'multiple', // allow rows to be selected
-  animateRows: true, // have rows animate to new positions when sorted
-
-  // example event handler
-  onCellClicked: params => {
-    console.log('cell was clicked', params)
-  }
+  columnDefs: columnDefs,
+  rowData: rowData
 };
 
-// get div to host the grid
-const eGridDiv = document.getElementById("myGrid");
-// new grid instance, passing in the hosting DIV and Grid Options
-new Grid(eGridDiv, gridOptions);
-
-// Fetch data from server
-fetch("https://www.ag-grid.com/example-assets/row-data.json")
-.then(response => response.json())
-.then(data => {
-  // load fetched data into grid
-  gridOptions.api.setRowData(data);
+// setup the grid after the page has finished loading
+document.addEventListener('DOMContentLoaded', () => {
+    const gridDiv = document.querySelector('#myGrid');
+    new agGrid.Grid(gridDiv, gridOptions);
 });

@@ -9,7 +9,7 @@
    />
    <title>Testing Stuff</title>
    <!-- Include the JS for AG Grid -->
-   <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
    <!-- Include the core CSS, this is needed by the grid -->
    <link rel="stylesheet"
      href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-grid.css"/>
@@ -18,11 +18,18 @@
      href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-theme-alpine.css"/>
  </head>
  <body>
+    <p>Note: Using AG-Grid Community for testing purposes and a variety of free, no-auth APIs</p>
+    <p>So far using "https://api3.binance.com"</p>
    <!-- Button to demonstrate calling the grid's API. -->
-   <button id = "deselectButton">Deselect Rows</button>
+   <button id = "deselectButton">Click Me</button>
    <!-- The div that will host the grid. ag-theme-alpine is the theme. -->
    <!-- The gid will be the size that this element is given. -->
-   <div id="myGrid" class="ag-theme-alpine" style="height: 500px"></div>
+   <div>
+      <div id="myGrid" class="ag-theme-alpine" style="height: 500px"></div>
+      <!--<script src="./index.js" ></script>-->
+   </div>
+   
    <script type="module" src="./test.js"></script>
+   
  </body>
 </html>
