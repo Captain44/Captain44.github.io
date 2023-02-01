@@ -26,7 +26,7 @@ var setupGrid = async function () {
       
       const gridOptions = {
         columnDefs: columnDefs,
-        rowData: []
+        rowData: [{"symbol" : "Nothing yet", "price" : "400"}]
       };
 
     // setup the grid after the page has finished loading
